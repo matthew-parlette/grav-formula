@@ -1,6 +1,10 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
 grav:
-  image: username/grav
+  image: garywiz/docker-grav
   name: grav
   branch: latest
+  port: 8080
+  directory: /var/grav
+  environment:
+    CONFIG_LOGGING: stdout

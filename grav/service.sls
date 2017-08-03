@@ -6,10 +6,6 @@
 include:
   - grav.install
 
-grav-file:
-  file.touch:
-    - name: {{ grav.filename }}
-
 grav-dir:
   file.directory:
     - name: {{ grav.directory }}
@@ -19,9 +15,9 @@ grav-container:
     - name: {{ grav.name }}
     - image: {{ grav.image }}:{{ grav.branch }}
     - binds:
-      - {{ grav.directory }}:/path/on/container:rw
+      - {{ grav.directory }}:/apps/var:rw
     - port_bindings:
-      - {{ grav.port }}:3000
+      - {{ grav.port }}:8080
     {%- if grav['environment'] is defined %}
     - environment:
       {%- for env, value in grav.environment.items() %}

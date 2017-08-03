@@ -1,6 +1,10 @@
 grav:
-  filename: /path/on/host.ext
   directory: /path/on/host
   port: 3000
   environment:
-    # key: value
+    CONFIG_LOGGING: stdout
+    CONFIG_ADMIN_USER: admin
+    CONFIG_ADMIN_PASSWORD: password
+    CONFIG_ADMIN_EMAIL: my@email.com
+    CONFIG_ADMIN_NAME: administrator
+    CONFIG_ADMIN_TITLE: administrator
