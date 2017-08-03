@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # vim: ft=yaml
-template:
-  pkg: template
-  config: '/etc/template'
-  service:
-    name: template
+grav:
+  image: username/grav
+  name: grav
+  branch: latest

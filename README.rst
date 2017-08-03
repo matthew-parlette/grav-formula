@@ -1,5 +1,5 @@
 ================
-template-formula
+grav-formula
 ================
 
 A saltstack formula that is empty. It has dummy content to help with a quick
@@ -16,7 +16,7 @@ Available states
 .. contents::
     :local:
 
-``template``
+``grav``
 ------------
 
-Installs the template package, and starts the associated template service.
+Installs the grav package, and starts the associated grav service.
