@@ -9,6 +9,7 @@ include:
 grav-dir:
   file.directory:
     - name: {{ grav.directory }}
+    - user: 901
 
 grav-container:
   dockerng.running:
